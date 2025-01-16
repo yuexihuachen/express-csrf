@@ -1,0 +1,43 @@
+{
+  "name": "@hellohd/express-csrf",
+  "version": "1.0.0",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "tsc:cjs": "tsc -p tsconfig.cjs.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yuexihuachen/express-csrf.git"
+  },
+  "keywords": [
+    "express",
+    "csrf"
+  ],
+  "author": "leonwang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuexihuachen/express-csrf/issues"
+  },
+  "homepage": "https://github.com/yuexihuachen/express-csrf#readme",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.0",
+    "express": "^4.21.2",
+    "typescript": "^5.7.3"
+  }
+}
